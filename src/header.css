@@ -9,18 +9,56 @@
 
 .header {
   padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: white;
+}
+
+.header__left > svg {
+  cursor: pointer;
 }
 
 .header__logo {
   height: 25px;
   margin-left: 20px;
+  cursor: pointer;
+}
+
+.header__input {
+  border: 1px solid rgb(0, 0, 0);
+  width: 30%;
+  display: flex;
+  align-items: center;
 }
 
 .header__input > input {
   flex: 1;
   border: none;
+  /* line-height: 198%; */
+  padding: 5px;
 }
 
-.header__input:nth-child(2) {
-  background-color: gray;
+.header__input > input:focus,
+.header__input > input:active {
+  outline: none;
+}
+
+.header__input > svg {
+  background-color: rgb(250, 250, 250);
+  border-left: 1px solid rgb(211, 211, 211);
+  width: 50px !important;
+  color: rgb(128, 128, 128);
+  cursor: pointer;
+}
+
+.header__icons {
+  width: 150px;
+  cursor: pointer;
+}
+.header__icons > svg:hover,
+.header__icons > svg:active,
+.header__left > svg:hover,
+.header__left > svg:active {
+  color: rgb(211, 211, 211);
 }

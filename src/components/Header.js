@@ -1,14 +1,12 @@
 import React from "react";
 import "../header.css";
 import { Button } from "@material-ui/core/Button";
-import {
-  MenuIcon,
-  SearchIcon,
-  VideoCallIcon,
-  AppsIcon,
-  NotificationsIcon,
-  Avatar,
-} from "@material-ui/icons";
+import AppsIcon from "@material-ui/icons/Apps";
+import MenuIcon from "@material-ui/icons/Menu";
+import SearchIcon from "@material-ui/icons/Search";
+import AccountCircleIcon from "@material-ui/icons/AccountCircle";
+import VideoCallIcon from "@material-ui/icons/VideoCall";
+import NotificationsIcon from "@material-ui/icons/Notifications";
 
 const Header = () => {
   return (
@@ -22,14 +20,14 @@ const Header = () => {
         />
       </div>
       <div className="header__input">
-        <input type="text" />
+        <input type="text" placeholder="Search" />
         <SearchIcon />
       </div>
       <div className="header__icons">
         <VideoCallIcon />
         <AppsIcon />
         <NotificationsIcon />
-        <Avatar />
+        <AccountCircleIcon />
       </div>
     </div>
   );
